@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Whack-a-Mole</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="game-shell">
+      <h1>Whack-a-Mole</h1>
+      <p class="subtitle">Use the Space bar to hit the mole before it disappears.</p>
+
+      <div class="controls">
+        <button id="startBtn">Start Game</button>
+        <button id="restartBtn" disabled>Restart</button>
+      </div>
+
+      <div class="stats">
+        <div class="stat-card">
+          <span class="label">Time</span>
+          <span id="time">30</span>
+        </div>
+        <div class="stat-card">
+          <span class="label">Score</span>
+          <span id="score">0</span>
+        </div>
+      </div>
+
+      <div id="message" class="message">Press Start to play.</div>
+
+      <div class="board" id="board">
+        <button class="hole" data-index="0" aria-label="Hole 1"></button>
+        <button class="hole" data-index="1" aria-label="Hole 2"></button>
+        <button class="hole" data-index="2" aria-label="Hole 3"></button>
+        <button class="hole" data-index="3" aria-label="Hole 4"></button>
+        <button class="hole" data-index="4" aria-label="Hole 5"></button>
+        <button class="hole" data-index="5" aria-label="Hole 6"></button>
+        <button class="hole" data-index="6" aria-label="Hole 7"></button>
+        <button class="hole" data-index="7" aria-label="Hole 8"></button>
+        <button class="hole" data-index="8" aria-label="Hole 9"></button>
+      </div>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
